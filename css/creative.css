@@ -168,7 +168,6 @@ img::-moz-selection {
 
 header.masthead {
   padding-top: 10rem;
-  float: right;
   padding-bottom: calc(10rem - 56px);
   background-image: url("../img/header.jpg");
   background-position: center center;
@@ -180,6 +179,7 @@ header.masthead {
 
 header.masthead hr {
   margin-top: 30px;
+  margin-left: 50px;
   margin-bottom: 30px;
 }
 
