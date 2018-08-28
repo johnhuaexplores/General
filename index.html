@@ -1,5 +1,5 @@
   <head>
-    <title>John Hua</title>
+    <title>Bootstrap Website</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -14,16 +14,6 @@
 
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
-
-    <!-- Contact Form links -->
-    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-    <link rel="stylesheet" type="text/css" href="css/util.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
 
   <body id="page-top">
@@ -37,6 +27,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#services">Services</a>
             </li>
@@ -58,11 +51,30 @@
       </div>
     </header>
 
+    <section class="bg-primary" id="about">
+      <div class="container">
+        <div class="row">
+          <div>
+
+            Hello There, it's nice to meet you. Pleaes pick your starter pokemon :)
+          <!-- <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">We've got what you need!</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+          </div> -->
+
+          <div>
+        </div>
+      </div>
+    </section>
+
     <section id="services">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading">Specialties</h2>
+            <hr class="my-4">
           </div>
         </div>
       </div>
@@ -87,7 +99,7 @@
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-floppy-o text-primary mb-3 sr-icons"></i>
               <h3 class="mb-3">Web Dev/Software Engineering</h3>
-              <p class="text-muted mb-0">Temporary Pitch</p>
+              <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
             </div>
           </div>
 
@@ -95,7 +107,7 @@
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-bar-chart text-primary mb-3 sr-icons"></i>
               <h3 class="mb-3">Brand/Advertise</h3>
-              <p class="text-muted mb-0">Temporary Pitch</p>
+              <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
             </div>
           </div>
 
@@ -184,6 +196,22 @@
             </a>
           </div>
 
+          <!-- <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div> -->
+
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
               <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
@@ -204,45 +232,31 @@
     </section>
 
     <section id="contact">
+      <div class="container">
 
-      <div class="container-contact100" style="background-image: url('images/bg-01.jpg');">
-    		<div class="wrap-contact100">
-    			<form class="contact100-form validate-form">
-    				<span class="contact100-form-title">
-    					Get in Touch
-    				</span>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <hr class="my-4">
+            <p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+          </div>
+        </div>
 
-    				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
-    					<span class="label-input100">Tell us your name *</span>
-    					<input class="input100" type="text" name="name" placeholder="Enter your name">
-    				</div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+            <p>626.478.6242</p>
+          </div>
 
-    				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-    					<span class="label-input100">Enter your email *</span>
-    					<input class="input100" type="text" name="email" placeholder="Enter your email">
-    				</div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+            <p>
+              <a href="mailto:your-email@your-domain.com">huaj7@uci.edu</a>
+            </p>
+          </div>
 
-    				<div class="wrap-input100">
-    					<span class="label-input100">Your Website</span>
-    					<input class="input100" type="text" name="web" placeholder="http://">
-    				</div>
-
-    				<div class="wrap-input100 validate-input" data-validate = "Message is required">
-    					<span class="label-input100">Message *</span>
-    					<textarea class="input100" name="message" placeholder="Your message here..."></textarea>
-    				</div>
-
-    				<div class="container-contact100-form-btn">
-    					<div class="wrap-contact100-form-btn">
-    						<div class="contact100-form-bgbtn"></div>
-    						<button class="contact100-form-btn">
-    							Submit
-    						</button>
-    					</div>
-    				</div>
-    			</form>
-    		</div>
-    	</div>
+        </div>
+      </div>
     </section>
 
     <!-- Bootstrap core JavaScript -->
@@ -256,12 +270,6 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
-    <!-- Contact Form Scripts -->
-    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-  	<script src="vendor/bootstrap/js/popper.js"></script>
-  	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-  	<script src="vendor/select2/select2.min.js"></script>
-  	<script src="js/main.js"></script>
 
   </body>
 
