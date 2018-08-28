@@ -1,34 +1,35 @@
-
-
-
-
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
-
 @font-face {
-  font-family: Ubuntu-Bold;
-  src: url('../fonts/ubuntu/Ubuntu-Bold.ttf'); 
+  font-family: Raleway-Black;
+  src: url('../fonts/raleway/Raleway-Black.ttf');
 }
 
+@font-face {
+  font-family: Raleway-SemiBold;
+  src: url('../fonts/raleway/Raleway-SemiBold.ttf');
+}
 
+@font-face {
+  font-family: Raleway-Bold;
+  src: url('../fonts/raleway/Raleway-Bold.ttf');
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 
 * {
-	margin: 0px; 
-	padding: 0px; 
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 }
 
 body, html {
 	height: 100%;
-	font-family: Ubuntu-Bold, sans-serif;
+	font-family: Raleway-SemiBold, sans-serif;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Ubuntu-Bold;
+	font-family: Raleway-SemiBold;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -53,7 +54,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: Ubuntu-Bold;
+	font-family: Raleway-SemiBold;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -72,17 +73,6 @@ input {
 	border: none;
 }
 
-input[type="number"] {
-    -moz-appearance: textfield;
-    appearance: none;
-    -webkit-appearance: none;
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
-
 textarea {
   outline: none;
   border: none;
@@ -92,15 +82,25 @@ textarea:focus, input:focus {
   border-color: transparent !important;
 }
 
-input::-webkit-input-placeholder { color: #bdbdd3;}
-input:-moz-placeholder { color: #bdbdd3;}
-input::-moz-placeholder { color: #bdbdd3;}
-input:-ms-input-placeholder { color: #bdbdd3;}
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
 
-textarea::-webkit-input-placeholder { color: #bdbdd3;}
-textarea:-moz-placeholder { color: #bdbdd3;}
-textarea::-moz-placeholder { color: #bdbdd3;}
-textarea:-ms-input-placeholder { color: #bdbdd3;}
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; }
+
+input::-webkit-input-placeholder { color: #adadad;}
+input:-moz-placeholder { color: #adadad;}
+input::-moz-placeholder { color: #adadad;}
+input:-ms-input-placeholder { color: #adadad;}
+
+textarea::-webkit-input-placeholder { color: #adadad;}
+textarea:-moz-placeholder { color: #adadad;}
+textarea::-moz-placeholder { color: #adadad;}
+textarea:-ms-input-placeholder { color: #adadad;}
 
 /*---------------------------------------------*/
 button {
@@ -118,19 +118,12 @@ iframe {
 }
 
 
-/*---------------------------------------------*/
-.container {
-	max-width: 1200px;
-}
-
-
-
 
 /*//////////////////////////////////////////////////////////////////
 [ Contact ]*/
 
 .container-contact100 {
-  width: 100%;  
+  width: 100%;
   min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -138,17 +131,21 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 15px;
-  position: relative;
-  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .wrap-contact100 {
-  width: 550px;
-  background: transparent;
-  padding: 50px 0px 160px 0px;
+  max-width: 960px;
+  background: #fff;
+  border-radius: 2px;
+  padding: 66px 115px 59px 115px;
+  position: relative;
 }
 
 
@@ -157,89 +154,91 @@ iframe {
 
 .contact100-form {
   width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .contact100-form-title {
   display: block;
-  font-family: Ubuntu-Bold;
+  width: 100%;
+  font-family: Raleway-Black;
   font-size: 30px;
-  color: #403866;
+  color: #333333;
   line-height: 1.2;
   text-transform: uppercase;
-  text-align: center;
-  padding-bottom: 49px;
+  text-align: left;
+  padding-bottom: 32px;
 }
+
+
 
 /*------------------------------------------------------------------
 [ Input ]*/
 
 .wrap-input100 {
   width: 100%;
-  background-color: #fff;
-  border-radius: 31px;
-  margin-bottom: 16px;
   position: relative;
-  z-index: 1;
+  background-color: transparent;
+  margin-bottom: 35px;
+}
+
+.rs1-wrap-input100 {
+  width: calc((100% - 30px) / 2);
+}
+
+.label-input100 {
+  font-family: Raleway-SemiBold;
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.5;
 }
 
 .input100 {
-  position: relative;
   display: block;
   width: 100%;
-  background: #fff;
-  border-radius: 31px;
-  font-family: Ubuntu-Bold;
-  font-size: 18px;
-  color: #8f8fa1;
+  background: #f2f2f2;
+  border-radius: 2px;
+
+  font-family: Raleway-SemiBold;
+  font-size: 20px;
+  color: #686868;
   line-height: 1.2;
+  padding: 0 28px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+
+  margin-top: 10px;
 }
 
 
 /*---------------------------------------------*/
 input.input100 {
   height: 62px;
-  padding: 0 35px 0 35px;
 }
 
 
 textarea.input100 {
-  min-height: 169px;
-  padding: 19px 35px 0 35px;
+  min-height: 162px;
+  padding-top: 19px;
+  padding-bottom: 13px;
 }
 
-/*------------------------------------------------------------------
-[ Focus Input ]*/
-
-.focus-input100 {
-  display: block;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  border-radius: 31px;
-  background-color: #fff;
-  pointer-events: none;
-  
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.input100:focus + .focus-input100 {
-  width: calc(100% + 20px);
+.input100:focus {
+  background: #e6e6e6;
 }
 
 /*------------------------------------------------------------------
 [ Button ]*/
 .container-contact100-form-btn {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -247,7 +246,34 @@ textarea.input100 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 10px;
+  margin-top: 5px;
+}
+
+.wrap-contact100-form-btn {
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.contact100-form-bgbtn {
+  position: absolute;
+  z-index: -1;
+  width: 300%;
+  height: 100%;
+  background: #df2351;
+  background: -webkit-linear-gradient(right, #2f91ff, #00c513, #2f91ff, #00c513);
+  background: -o-linear-gradient(right, #2f91ff, #00c513, #2f91ff, #00c513);
+  background: -moz-linear-gradient(right, #2f91ff, #00c513, #2f91ff, #00c513);
+  background: linear-gradient(right, #2f91ff, #00c513, #2f91ff, #00c513);
+  top: 0;
+  left: -100%;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .contact100-form-btn {
@@ -261,53 +287,39 @@ textarea.input100 {
   padding: 0 20px;
   min-width: 150px;
   height: 62px;
-  background-color: transparent;
-  border-radius: 31px;
 
-  font-family: Ubuntu-Bold;
+  font-family: Raleway-Bold;
   font-size: 16px;
   color: #fff;
   line-height: 1.2;
   text-transform: uppercase;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-  position: relative;
-  z-index: 1;
 }
 
-.contact100-form-btn::before {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  border-radius: 31px;
-  background-color: #827ffe;
-  pointer-events: none;
-  
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.contact100-form-btn:hover:before {
-  background-color: #403866;
-  width: calc(100% + 20px);
+.wrap-contact100-form-btn:hover .contact100-form-bgbtn {
+  left: 0;
 }
 
 
+/*------------------------------------------------------------------
+[ Responsive ]*/
+
+@media (max-width: 992px) {
+  .wrap-contact100 {
+    padding: 66px 80px 59px 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rs1-wrap-input100 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrap-contact100 {
+    padding: 66px 15px 59px 15px;
+  }
+}
 
 
 /*------------------------------------------------------------------
@@ -320,22 +332,21 @@ textarea.input100 {
 .alert-validate::before {
   content: attr(data-validate);
   position: absolute;
-  z-index: 1000;
   max-width: 70%;
   background-color: #fff;
   border: 1px solid #c80000;
-  border-radius: 14px;
+  border-radius: 2px;
   padding: 4px 25px 4px 10px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
+  bottom: calc((100% - 34px) / 2);
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  transform: translateY(50%);
   right: 10px;
   pointer-events: none;
 
-  font-family: Ubuntu-Bold;
+  font-family: Raleway-SemiBold;
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
@@ -351,20 +362,19 @@ textarea.input100 {
 }
 
 .alert-validate::after {
-  content: "\f06a";
+  content: "\f12a";
   font-family: FontAwesome;
   display: block;
   position: absolute;
-  z-index: 1100;
   color: #c80000;
   font-size: 16px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: 16px;
+  bottom: calc((100% - 34px) / 2);
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  transform: translateY(50%);
+  right: 18px;
 }
 
 .alert-validate:hover:before {
