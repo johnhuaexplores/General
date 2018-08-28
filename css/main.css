@@ -1,31 +1,24 @@
-
-
-
-
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
-
 @font-face {
   font-family: Raleway-Black;
-  src: url('../fonts/raleway/Raleway-Black.ttf'); 
+  src: url('../fonts/raleway/Raleway-Black.ttf');
 }
 
 @font-face {
   font-family: Raleway-SemiBold;
-  src: url('../fonts/raleway/Raleway-SemiBold.ttf'); 
+  src: url('../fonts/raleway/Raleway-SemiBold.ttf');
 }
 
 @font-face {
   font-family: Raleway-Bold;
-  src: url('../fonts/raleway/Raleway-Bold.ttf'); 
+  src: url('../fonts/raleway/Raleway-Bold.ttf');
 }
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 
 * {
-	margin: 0px; 
-	padding: 0px; 
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 }
 
@@ -130,7 +123,7 @@ iframe {
 [ Contact ]*/
 
 .container-contact100 {
-  width: 100%;  
+  width: 100%;
   min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -395,22 +388,3 @@ textarea.input100 {
     opacity: 1;
   }
 }
-
-
-/*==================================================================
-[ Contact more ]*/
-
-.contact100-more {
-  display: block;
-  max-width: 960px;
-  font-family: Raleway-SemiBold;
-  font-size: 20px;
-  color: #fff;
-  line-height: 1.4;
-  text-align: center;
-  padding: 40px 0 10px 0;
-}
-
-
-
-
