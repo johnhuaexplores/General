@@ -311,7 +311,7 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  justify-content: right;
+  justify-content: center;
   align-items: flex-start;
   padding: 15px;
   position: relative;
