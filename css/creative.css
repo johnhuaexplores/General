@@ -51,7 +51,7 @@ h6 {
 }
 
 section {
-  padding: 8rem 0;
+  padding: 3rem 0;
 }
 
 .section-heading {
@@ -340,7 +340,7 @@ iframe {
   line-height: 1.2;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 49px;
+  padding-bottom: 5px;
 }
 
 /*------------------------------------------------------------------
@@ -373,7 +373,6 @@ input.input100 {
   height: 62px;
   padding: 0 35px 0 35px;
 }
-
 
 textarea.input100 {
   min-height: 169px;
@@ -466,7 +465,7 @@ textarea.input100 {
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
   border-radius: 31px;
-  background-color: #827ffe;
+  background-color: #ee4b28;
   pointer-events: none;
 
   -webkit-transition: all 0.4s;
