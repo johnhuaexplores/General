@@ -251,11 +251,6 @@ header.masthead p {
 
 /* Contact Form CSS */
 
-/* @font-face {
-  font-family: Ubuntu-Bold;
-  src: url('../fonts/ubuntu/Ubuntu-Bold.ttf');
-} */
-
 input {
 	outline: none;
 	border: none;
@@ -322,7 +317,7 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: right;
   padding: 15px;
   position: relative;
   background-color: #f2f2f2;
