@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
   font-family: Ubuntu-Bold;
   src: url('../fonts/ubuntu/Ubuntu-Bold.ttf');
-}
+} */
 
 input {
 	outline: none;
@@ -56,7 +56,6 @@ iframe {
 	max-width: 1200px;
 }
 
-
 /*//////////////////////////////////////////////////////////////////
 [ Contact ]*/
 
@@ -92,7 +91,7 @@ iframe {
 
 .contact100-form-title {
   display: block;
-  font-family: Ubuntu-Bold;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif
   font-size: 30px;
   color: #403866;
   line-height: 1.2;
