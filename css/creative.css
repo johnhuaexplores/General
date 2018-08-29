@@ -311,8 +311,8 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
+  align-items: flex-start;
   padding: 15px;
   position: relative;
   background-color: red;
