@@ -87,17 +87,17 @@
       <div class="container">
         <div class="row">
           <div class="contact-container">
-            <form id ="contact-form" action="https://formspree.io/huaj7@uci.edu" method="POST">
-              <input type="name" id="fname" name="full-name" placeholder="Enter your full name">
-              <input type="email" id="fname" name="_replyto" placeholder="Enter your email address">
-              <input type="phone" id="fname" name="firstname" placeholder="Enter your phone number">
-              <textarea id="subject" name="body" placeholder="Write something.." style="height:200px"></textarea>
+            <form name="gform" id="contact-form" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSe2IKp1JhIbzL7wezv-wHRDf1XpqO0HQIGw-KCzMX0lWNRbjQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+              <input type="name" id="entry.1878404329" name="entry.1878404329" placeholder="Enter your full name">
+              <input type="email" id="entry.1263196473" name="entry.1263196473" placeholder="Enter your email address">
+              <input type="phone" id="entry.601016939" name="entry.601016939" placeholder="Enter your phone number">
+              <textarea id="entry.1967673737" name="entry.1967673737" placeholder="Write something.." style="height:200px"></textarea>
               <input type="submit" value="Submit">
             </form>
           </div>
-
         </div>
       </div>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
     </section>
 
     <!-- Core References -->
@@ -108,6 +108,17 @@
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="js/creative.min.js"></script>
 
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript">var submitted=false;</script>
+    <script type="text/javascript">
+    $('#gform').on('submit', function(e) {
+      $('#gform *').fadeOut(2000);
+      $('#gform').prepend('Your submission has been processed...');
+      });
+    </script>
+
   </body>
+
+
 
 </html>
