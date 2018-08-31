@@ -73,3 +73,11 @@
   });
 
 })(jQuery); // End of use strict
+
+
+// Contact form js
+
+$('#contact-form').on('submit', function(e) {
+  $('#contact-form *').fadeOut(2000);
+  $('#contact-form').prepend('Your submission has been processed! Thank you.');
+  });
